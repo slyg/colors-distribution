@@ -1,0 +1,7 @@
+
+#container {position: relative; width: 700px; height: 450px; margin: 50px auto; border: 1px solid #ccc; border-width: 1px 0 0 1px;}
+
+    .top-right-legend {position: absolute; right: 0; top: -50px;}
+    .bottom-left-legend {position: absolute; left: -100px; bottom: 0;}
+    
+    .color-item {list-style-type : none; position: absolute; width: 10px; height: 10px; -moz-border-radius: 5px;}
