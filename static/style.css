@@ -1,7 +1,24 @@
 
-#container {position: relative; width: 700px; height: 450px; margin: 50px auto; border: 1px solid #ccc; border-width: 1px 0 0 1px;}
+body {background-color: #eee; font-family: Arial;}
 
-    .top-right-legend {position: absolute; right: 0; top: -50px;}
-    .bottom-left-legend {position: absolute; left: -100px; bottom: 0;}
+#container {position: relative; width: 800px; margin: 60px auto;}
     
-    .color-item {list-style-type : none; position: absolute; width: 10px; height: 10px; -moz-border-radius: 5px;}
+    h3 {font-size: 10px; font-weight: normal;}
+    .top-right-legend {position: absolute; right: 0; top: -35px;}
+    .bottom-left-legend {position: absolute; left: -60px; bottom: -10px;}
+    .colors-container {
+        background: none repeat scroll 0 0 #000000;
+        border: 1px solid #ccc;
+        border-radius: 3px 3px 3px 3px;
+        box-shadow: 0 0 5px 3px #CCCCCC;
+        height: 510px;
+        margin: 0;
+        padding: 0;
+    }
+    .color-item {list-style-type : none; position: absolute; width: 10px; height: 3px; -moz-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px;}
+    .caption {
+        position: absolute;
+        width: 100%;
+        text-align: center;
+    }
+    .caption:first-letter {text-transform : capitalize;}

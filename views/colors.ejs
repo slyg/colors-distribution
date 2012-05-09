@@ -1,12 +1,13 @@
 <div id="container">
 
-    <h3 class="top-right-legend">Saturation</h3>
-    <h3 class="bottom-left-legend">Hue</h3>
+    <h3 class="top-right-legend">Hue</h3>
+    <h3 class="bottom-left-legend">Saturation</h3>
     
-    <ul>
+    <ul class="colors-container">
       <% for (var d in datas) { %>
-        <li class="color-item" style="background-color: <%= datas[d].Hex %>; top: <%= datas[d].Hsv.s*4 %>px; left: <%= datas[d].Hsv.h*2 %>px;"></li>
+        <li class="color-item" style="background-color: <%= datas[d].Hex %>; top: <%= datas[d].Hsv.s*5 + 4 %>px; left: <%= datas[d].Hsv.h*2 + 4 %>px;"></li>
       <% } %>
     </ul>
+    <p class="caption"><%= target %> UI existing colors</p>
 
 </div>
