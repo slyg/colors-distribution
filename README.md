@@ -1,4 +1,4 @@
-Viadeo Colors distribution
+Colors distribution
 ==========================
 
 This is a little tool for designers that provides a website color profile map, [see running demo](http://colors-distribution.herokuapp.com/).
