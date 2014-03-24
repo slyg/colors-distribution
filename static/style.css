@@ -21,9 +21,17 @@ body {background-color: #eee; font-family: Arial;}
         height: 510px;
         margin: 0;
         padding: 0;
+    }
+    .color-item {
+        list-style-type : none; 
+        position: absolute; 
+        width: 10px; 
+        height: 4px; 
+        -moz-border-radius: 2px; 
+        -webkit-border-radius: 2px; 
+        border-radius: 2px;
         cursor: pointer;
     }
-    .color-item {list-style-type : none; position: absolute; width: 10px; height: 4px; -moz-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px;}
     .caption {
         position: absolute;
         width: 100%;
