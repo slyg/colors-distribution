@@ -12,13 +12,10 @@
     app.use(app.router); // avoid static treatment
     
     app.get('/', function(req, res){
-        var target =  "viadeo";
-        render(target, res);
-    });
-    
-    app.get('/:target', function(req, res){
-        var target =  req.params.target;
-        if(target){ render(target, res); }
+
+        var target = req.query.target;
+
+        render(target ? target : 'http://www.viadeo.com', res);
     });
     
     function render(target, res){
@@ -28,13 +25,13 @@
             http.request(
                 {
                     host: 'www.colorfyit.com',
-                    path: '/api/swatches/list.json?url=www.' + target + '.com&discover=true'
+                    path: '/api/swatches/list.json?url=' + target + '&discover=true'
                 },
                 function(response) {
                     var str = '';
                     response.on('data', function (chunk) { str += chunk; });
                     response.on('end', function () {
-                        res.render('colors', { datas : JSON.parse(str).colors, target : target });
+                        res.render('colors', { data : JSON.parse(str).colors, target : target });
                     });
                 }
             ).end();

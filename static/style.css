@@ -4,6 +4,13 @@ body {background-color: #eee; font-family: Arial;}
 #container {position: relative; width: 800px; margin: 60px auto;}
     
     h3 {font-size: 10px; font-weight: normal;}
+
+    #selected-color-hex {
+        position: absolute; top: -42px;
+        padding: 5px;
+        font-size: 16px;
+        font-family: Consolas, sans-serif;
+    }
     .top-right-legend {position: absolute; right: 0; top: -35px;}
     .bottom-left-legend {position: absolute; left: -60px; bottom: -10px;}
     .colors-container {
@@ -14,11 +21,12 @@ body {background-color: #eee; font-family: Arial;}
         height: 510px;
         margin: 0;
         padding: 0;
+        cursor: pointer;
     }
-    .color-item {list-style-type : none; position: absolute; width: 10px; height: 3px; -moz-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px;}
+    .color-item {list-style-type : none; position: absolute; width: 10px; height: 4px; -moz-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px;}
     .caption {
         position: absolute;
         width: 100%;
         text-align: center;
+        font-size: 10px;
     }
-    .caption:first-letter {text-transform : capitalize;}

@@ -1,4 +1,4 @@
 Viadeo Colors distribution
 ==========================
 
-http://colors-distribution-viadeo.herokuapp.com/
+http://colors-distribution.herokuapp.com/

@@ -3,11 +3,13 @@
     <h3 class="top-right-legend">Hue</h3>
     <h3 class="bottom-left-legend">Saturation</h3>
     
+    <input type="text" id="selected-color-hex" placeholder="selected color hex" />
+
     <ul class="colors-container">
-      <% for (var d in datas) { %>
-        <li class="color-item" style="background-color: <%= datas[d].Hex %>; top: <%= datas[d].Hsv.s*5 + 4 %>px; left: <%= datas[d].Hsv.h*2 + 4 %>px;"></li>
+      <% for (var d in data) { %>
+        <li class="color-item" style="background-color: <%= data[d].Hex %>; top: <%= data[d].Hsv.s*5 + 4 %>px; left: <%= data[d].Hsv.h*2 + 4 %>px;" title="<%= data[d].Hex %>"></li>
       <% } %>
     </ul>
-    <p class="caption"><%= target %> UI existing colors</p>
+    <p class="caption"><%= target %> <br />colors (via <a href="http://www.colorfyit.com">colorfyit</a>)</p>
 
 </div>
